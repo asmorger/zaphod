@@ -65,9 +65,9 @@
         default_layer {
             label = "Base";
             bindings = <
-                &as Q      &as W      &as E       &as R          &as T         &as Y            &as U          &as I       &as O      &as P
-                &as A 	   &as S      &as D       &as F          &kp G         &kp H            &as J          &as K       &as L      &as QUOT
-                &as Z      &as X      &as C       &as V          &as B         &as N            &as M          &as COMMA   &as DOT    &as FSLH
+                &as Q      &as W      &as F       &as P          &as B         &as J            &as L          &as U       &as Y      &as SEMI
+                &as A 	   &as R      &as S       &as T          &kp G         &kp M            &as N          &as E       &as I      &as O
+                &as Z      &as X      &as C       &as D          &as V         &as K            &as H          &as COMMA   &as DOT    &as FSLH
                                                   &lt NAV_L TAB  &lt OTH_L RET &lt NUM_L SPACE  &lt SYM_L BKSP
             >;
         };
