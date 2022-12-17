@@ -76,7 +76,7 @@
             label = "Nav";
             bindings = <
                 &kp TAB    &trans     &trans      &trans          &trans       &kp HOME         &kp PG_DN      &kp PG_UP  &kp END     &kp DEL
-                &sk LSHFT  &sk LCTRL  &sk LALT    &sk LGUI        &trans       &kp LEF T        &kp DOWN       &kp UP     &kp RIGHT   &kp BSPC
+                &sk LSHFT  &sk LCTRL  &sk LALT    &sk LGUI        &trans       &kp LEFT         &kp DOWN       &kp UP     &kp RIGHT   &kp BSPC
                 &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans     &trans      &kp RTN
                                                   &trans          &trans       &kp &caps_word   &kp DEL
             >;
