@@ -105,11 +105,11 @@
         sym_layer {
             label = "Sym";
             bindings = <
-                &kp LBRC     &kp LS(N7)  &kp LS(N8)  &kp LS(N9) &kp RBRC        &trans &trans   &trans    &trans    &trans
-                &kp COLON    &kp LS(N4)  &kp LS(N5)  &kp LS(N6) &kp PLUS        &trans &trans   &trans    &trans    &trans
-                &kp TILDE    &kp LS(N1)  &kp LS(N2)  &kp LS(N3) &kp LS(BSLH)    &trans &trans   &trans    &trans    &trans
-                                                   &kp LS(N0) &kp UNDER         &trans &trans
-            >;
+                &kp ESC     &kp LPAR  &kp RPAR   &kp LT    &kp GT          &kp LBKT  &kp RBKT   &kp LBRC    &kp RBRC    &kp GRAVE
+                &kp MINUS   &kp STAR  &kp EQUAL  &kp UNDER &kp DOLLAR      &kp POUND &sk LGUI   &sk LALT    &sk LCTRL   &sk LSHFT
+                &kp PLUS    &kp PIPE  &kp TILDE  &kp SLASH &kp PERCENT     &kp AT    &kp BSLH   &kp AMPS    &kp QMARK   &kp EXCL                                                   &kp LS(N0) &kp UNDER         &trans &trans
+            
+	    >;
         };
 
         media_layer {
