@@ -11,10 +11,10 @@
 
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
-#define DEFAULT 1
-#define NAV 2
-#define NUM 3
-#define SYM 4
+#define DEFAULT 0
+#define NAV 1
+#define NUM 2
+#define SYM 3
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
