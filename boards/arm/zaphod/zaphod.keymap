@@ -62,7 +62,8 @@
                 &kp PLUS    &kp PIPE  &kp TILDE  &kp SLASH &kp PERCENT     &kp AT    &kp BSLH   &kp AMPS    &kp QMARK   &kp EXCL                                                   &kp LS(N0) &kp UNDER         &trans &trans
                                                  &trans    &kp LC(BSPC)    &trans    &trans
 	    >;
-
+        };
+	
         nav_layer {
             label = "Nav";
             bindings = <
@@ -81,8 +82,6 @@
                 &trans     &trans     &kp LC(LS(RET)) &kp LC(B)       &trans        &kp K_PREV      &kp K_VOL_DN   &kp K_VOL_UP  &kp K_NEXT     &trans
                                                       &trans         &kp MINUS     &trans          &trans
             >;
-        };
-
         };
    };
 };
