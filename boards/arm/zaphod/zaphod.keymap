@@ -12,15 +12,23 @@
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
 #define DEFAULT 0
-#define NAV 1
-#define NUM 2
-#define SYM 3
+#define SYM 1
+#define NAV 2
+#define NUM 3
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
 
 / {
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <SYM NAV>;
+            then-layer = <NUM>;
+        };
+    };
+    
     behaviors {
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
@@ -46,13 +54,22 @@
             >;
         };
 
+        sym_layer {
+            label = "Sym";
+            bindings = <
+                &kp ESC     &kp LPAR  &kp RPAR   &kp LT    &kp GT          &kp LBKT  &kp RBKT   &kp LBRC    &kp RBRC    &kp GRAVE
+                &kp MINUS   &kp STAR  &kp EQUAL  &kp UNDER &kp DOLLAR      &kp POUND &sk LGUI   &sk LALT    &sk LCTRL   &sk LSHFT
+                &kp PLUS    &kp PIPE  &kp TILDE  &kp SLASH &kp PERCENT     &kp AT    &kp BSLH   &kp AMPS    &kp QMARK   &kp EXCL                                                   &kp LS(N0) &kp UNDER         &trans &trans
+                                                 &trans    &kp LC(BSPC)    &trans    &trans
+	    >;
+
         nav_layer {
             label = "Nav";
             bindings = <
                 &kp TAB    &trans     &trans      &trans          &trans       &kp HOME         &kp PG_DN      &kp PG_UP  &kp END     &kp DEL
                 &sk LSHFT  &sk LCTRL  &sk LALT    &sk LGUI        &trans       &kp LEFT         &kp DOWN       &kp UP     &kp RIGHT   &kp BSPC
                 &bt BT_PRV &bt BT_NXT &bt BT_CLR  &trans          &trans       &trans           &trans         &trans     &trans      &kp RET
-                                                  &trans          &trans       &caps_word       &mo NUM
+                                                  &trans          &trans       &caps_word       &trans
             >;
         };
 
@@ -66,14 +83,6 @@
             >;
         };
 
-        sym_layer {
-            label = "Sym";
-            bindings = <
-                &kp ESC     &kp LPAR  &kp RPAR   &kp LT    &kp GT          &kp LBKT  &kp RBKT   &kp LBRC    &kp RBRC    &kp GRAVE
-                &kp MINUS   &kp STAR  &kp EQUAL  &kp UNDER &kp DOLLAR      &kp POUND &sk LGUI   &sk LALT    &sk LCTRL   &sk LSHFT
-                &kp PLUS    &kp PIPE  &kp TILDE  &kp SLASH &kp PERCENT     &kp AT    &kp BSLH   &kp AMPS    &kp QMARK   &kp EXCL                                                   &kp LS(N0) &kp UNDER         &trans &trans
-                                                 &mo NUM   &kp LC(BSPC)    &trans    &trans
-	    >;
         };
    };
 };
