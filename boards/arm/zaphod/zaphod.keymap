@@ -27,6 +27,11 @@
             if-layers = <SYM NAV>;
             then-layer = <NUM>;
         };
+	
+        tri_layer_other_way {
+            if-layers = <NAV SYM>;
+            then-layer = <NUM>;
+        };
     };
     
     behaviors {
