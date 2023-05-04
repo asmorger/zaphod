@@ -83,8 +83,8 @@
             label = "Num";
             bindings = <
                 &kp N7     &kp N5     &kp N3          &kp N1          &kp N9        &kp N8          &kp N0         &kp N2     &kp N4      &kp N6
-                &sk LSHFT  &sk LCTRL  &sk LALT        &sk LGUI        &kp F11       &kp F10         &sk LGUI       &sk LALT   &sk LCTRL   &kp LC(BSPC)
-                &bt BT_PRV &bt BT_NXT &bt BT_CLR      &kp LC(B)       &trans        &kp K_PREV      &kp K_VOL_DN   &kp K_VOL_UP  &kp K_NEXT     &trans
+                &kp F7     &kp F5     &kp F3          &kp F11         &kp F1        &kp F12         &kp F10        &kp F2     &kp F4      &kp LC(BSPC)
+                &bt BT_PRV &bt BT_NXT &bt BT_CLR      &kp LC(B)       &trans        &kp K_PREV      &kp K_VOL_DN   &kp K_VOL_UP  &kp K_NEXT  &kp LA(RET)
                                                       &trans         &kp MINUS     &trans          &trans
             >;
         };
