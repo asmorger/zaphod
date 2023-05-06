@@ -63,8 +63,8 @@
             label = "Sym";
             bindings = <
                 &kp ESC     &kp LPAR  &kp LT     &kp LBRC    &kp LBKT      &kp RBKT  &kp RBRC   &kp GT      &kp RPAR    &kp GRAVE
-                &kp MINUS   &kp STAR  &kp EQUAL  &kp UNDER &kp DOLLAR      &kp POUND &sk LGUI   &sk LALT    &sk LCTRL   &sk LSHFT
-                &kp PLUS    &kp PIPE  &kp TILDE  &kp SLASH &kp PERCENT     &kp AT    &kp BSLH   &kp AMPS    &kp QMARK   &kp EXCL                                                   &kp LS(N0) &kp UNDER         &trans &trans
+                &kp MINUS   &kp STAR  &kp EQUAL  &kp UNDER &kp DOLLAR      &kp AT    &sk LGUI   &sk LALT    &sk LCTRL   &sk LSHFT
+                &kp PLUS    &kp PIPE  &kp TILDE  &kp SLASH &kp PERCENT     &kp POUND &kp BSLH   &kp AMPS    &kp QMARK   &kp EXCL                                                   &kp LS(N0) &kp UNDER         &trans &trans
                                                  &trans    &key_repeat     &trans    &trans
 	    >;
         };
