@@ -55,7 +55,7 @@
                 AS(Q)     AS(W)      AS(F)      AS(P)          AS(B)         AS(J)            AS(L)          AS(U)       AS(Y)      AS(SEMI)
                 AS(A) 	  AS(R)      AS(S)      AS(T)          AS(G)         AS(M)            AS(N)          AS(E)       AS(I)      AS(O)
                 AS(Z)     AS(X)      AS(C)      AS(D)          AS(V)         AS(K)            AS(H)          AS(COMMA)   AS(DOT)    AS(APOS)
-                                                  &mo NAV      &kp SPC       &sk LS(LGUI)    &mo SYM
+                                                  &mo NAV      &kp SPC       &sk LC(LS(LGUI))    &mo SYM
             >;
         };
 
