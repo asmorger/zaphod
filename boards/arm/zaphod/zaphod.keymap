@@ -62,7 +62,7 @@
                 &kp Q        &kp W         &kp F         &kp P         &kp B       &kp J     &kp L         &kp U        &kp Y       &kp SEMI
                 &hm LCTRL A  &hm LALT R    &hm LGUI S    &hm LSHFT T   &kp G       &kp M     &hm LSHFT N   &hm LGUI E   &hm LALT I  &hm LCTRL O
                 &kp Z        &kp X         &kp C         &kp D         &kp V       &kp K     &kp H         &kp COMMA    &kp DOT     &kp APOS
-                                                   &mo NAV   &kp SPC     &sk LC(LS(LGUI))    &mo SYM
+                                                   &mo NAV   &kp SPC     &sk LC(LS(LALT))    &mo SYM
             >;
         };
 
